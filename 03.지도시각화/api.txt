@@ -1,6 +1,6 @@
 도로명 주소 api
  - 주소기반산업지원서비스: api 신청하기
-	api key = devU01TX0FVVEgyMDIyMDgxNjA5MTg0ODExMjg4NDE=
+	api key ex) devU01TX0FVVEgyMDIyMDgxNjA5MTgxxxxxxxxx
 
  - 위도, 경도: 카카오 개발자
 	
