@@ -1,0 +1,29 @@
+도로명 주소 api
+ - 주소기반산업지원서비스: api 신청하기
+	api key = devU01TX0FVVEgyMDIyMDgxNjA5MTg0ODExMjg4NDE=
+
+ - 위도, 경도: 카카오 개발자
+	
+open api
+ - get 방식
+	url - parameter, key 제출 => 
+	결과: XML(extensible markup language) - 표준안
+		<tag>내용</tag>
+		json (javascript object notation) - de facto standard(사실상 표준)
+	
+	A-------------B
+	+
+	+
+	+
+	+
+	+
+	C=============D
+	통신을 주고 받는 방식이 다른 모습
+	
+	A-------------B
+	|
+	|
+	|  protocol - 통신의 표준화, Internet, HTML
+	|
+	|
+	C-------------D
