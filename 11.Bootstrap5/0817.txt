@@ -4,11 +4,6 @@
 	- 직접 하나하나 만든다면 힘들 것
 	- web framework - Bootstrap
 	
-	flask
-		Jinja
-		- 상속: 공통적인 부분은 base file로 만들고 상속받으면 된다.
-		- 반복문: 반복되는 태그 반복. html에서도 사용 가능하다.
-		- 조건문, 함수, 파이썬 코드 
 	head
 	- favicon.ico
 	- bootstrap.min.css: 스타일 적용하는 css, 근데 용량을 줄이도록 한줄로 쭉 썼다.
@@ -17,9 +12,18 @@
 
 	bootstrap carousel - 사진 슬라이드
 
+	flask
+		Jinja
+		- 상속: 공통적인 부분은 base file로 만들고 상속받으면 된다.
+		- 반복문: 반복되는 태그 반복. html에서도 사용 가능하다.
+		- 조건문, 함수, 파이썬 코드 
+
 2. 웹 페이지와 서버가 상호작용하게 만들기
 	- routing: web page에 있는 href값과 서버를 연결
 	- 서버가 사용자의 입력값을 받아들이는 입력 화면을 제공 
 		-> 입력값을 넣고 난 후 서버에 전달해 처리
 		-> 그 결과를 보여주는 것 
 
+플라스크
+
+	
