@@ -1,0 +1,21 @@
+1. 웹페이지 만들기
+	- HTML, CSS, JS
+		- CSS: file로, head > style 태그 안, tag의 style 속성에서 설정 가능
+	- 직접 하나하나 만든다면 힘들 것
+	- web framework - Bootstrap
+	
+	head
+	- favicon.ico
+	- bootstrap.min.css: 스타일 적용하는 css, 근데 용량을 줄이도록 한줄로 쭉 썼다.
+	- font awesome: 아이콘
+	- bootstrap.bundle.min.js: 부트스트랩의 자바스크립트 모음집
+	
+	body
+	nabar
+2. 웹 페이지와 서버가 상호작용하게 만들기
+	- routing: web page에 있는 href값과 서버를 연결
+	- 서버가 사용자의 입력값을 받아들이는 입력 화면을 제공 
+		-> 입력값을 넣고 난 후 서버에 전달해 처리
+		-> 그 결과를 보여주는 것 
+
+bootstrap carousel - 사진 슬라이드
