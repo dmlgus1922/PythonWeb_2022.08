@@ -31,7 +31,9 @@ def menu():
         # 사용자가 입력한 파일 읽기, upload 디렉토리에 저장
         f_image = request.files['image']
         print(f_image.filename)  # 사용자가 입력한 파일 이름
-        filename = os.path.join(current_app.root_path, 'static/upload/') + f_image.filename # 저장할 경로까지 만든 것
+        # filename = os.path.join(current_app.root_path, 'static/upload/') + f_image.filename 
+        # 저장할 경로까지 만든 것
+        filename = os.path.join(app.static_folder, 'upload/') + f_image.filename
         print(filename)
 
         f_image.save(filename)
@@ -39,8 +41,10 @@ def menu():
         ### !!! 모델 실행 후 결과를 돌려줌 !!! ###
         # ex) 동물 분류하는 모델을 학습시켰고 그 모델을 저장, 여기에서 불러와서 predict한다면
         result = '독수리 (73.52%)'
-    
-        return render_template('menu_res.html', result = result, f_name = f_image.filename,menu = menu)
+        mtime = int(os.stat(filename).st_mtime)
+        
+        return render_template('menu_res.html', result = result, f_name = f_image.filename,
+            menu = menu, mtime = mtime)
         
 if __name__ == '__main__':
     app.run(debug=True)
